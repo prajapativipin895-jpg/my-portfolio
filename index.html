@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Sections General */
+        section {
+            padding: 100px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-size: 32px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            color: white;
+            text-align: left;
+            padding: 150px 20px;
+            max-width: 100%;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #fff;
+            color: #2c3e50;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 18px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-badge {
+            background: #eef2f3;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 1px solid #ddd;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: #1abc9c;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+        }
+
+        .contact-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            color: #1abc9c;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .circle-logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <img src="vipinnn.jpeg" alt="website logo" class="circle-logo">
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="Personal Detail.pdf" target="_blank">Resume</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hello, Main VIPIN PRAJAPATI Hoon </h1>
+        <p>Main ek Web Developer / Designer hoon.</p>
+        <a href="#projects" class="btn">My Work</a>
+        <img src="vipinnn.jpeg" alt="my pic" style="width: 300px; height: 300px; object-fit: cover; border: 4px solid #00bcd4; float: right; margin-top: 10px; ">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Mere Baare Me</h2>
+        <p>I have complete my Metriculation from CBSE board and Intermediate from UP borad. Now i am studying Batchlor of Art from Dr. Ram Manohar Lohiya Awadh Univercity. I have complete my O Level course from NIELIT and COPA (ITI). I have complete my project given below.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skils</h2>
+        <div class="skills-container">
+            <div class="skill-badge">HTML & CSS</div>
+            <div class="skill-badge">JavaScript Basics</div>
+            <div class="skill-badge">Python</div>
+            <div class="skill-badge">MS Excel, Spreadsheet</div>
+            <div class="skill-badge">Presentation, MS PowerPoint</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Mere Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3><a href="https://prajapativipin895-jpg.github.io/birthday/" target="_blank">Project 1 </a></h3>
+                <p>Ye project Birthday ke liye banaya hai. Isme  HTML Language ,CSS and JAVA SCRIPT ka use kiya hai.</p>
+            </div>
+            <div class="project-card">
+                <h3><a>Project 2</h3>
+                <p> <!----------project discription---------></p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p><!----------project discription---------></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 align="center">Contact </h2>
+        <p style="margin-bottom: 20px;">Agar aap mujhse baat karna chahte hain toh niche diye gaye links par click karein:</p>
+        <div class="contact-links">
+            <a href="tel:+919794477916">call</a>
+            <a href="tel:+917236060380">call 2</a>
+            <a href="mailto:prajapativipin895@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/vipin-prajapati-79435835b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/prajapativipin895-jpg" target="_blank">GitHub</a>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vipin Prajapati. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
